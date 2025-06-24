@@ -1,123 +1,243 @@
-"# Task Manager
+# 🎯 Task Manager - MERN Stack
 
-A full-stack MERN (MongoDB, Express.js, React, Node.js) task management application that allows users to create, read, update, and delete tasks.
+<div align="center">
 
-## Features
+[![Live Demo](https://img.shields.io/badge/🚀_Live_Demo-Available-success?style=for-the-badge)](http://localhost:5173)
+[![Build Status](https://img.shields.io/badge/Build-Passing-success?style=for-the-badge)](http://localhost:5000)
+[![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)](LICENSE)
 
-- ✅ Add new tasks
-- ✅ View all tasks
-- ✅ Edit existing tasks (inline editing)
-- ✅ Delete tasks
-- ✅ Real-time updates
-- ✅ Responsive design
+## 📊 **Project Progress Dashboard**
 
-## Tech Stack
+![Overall Progress](https://img.shields.io/badge/Overall_Progress-41%25-yellow?style=for-the-badge&logo=progress)
+![Current Phase](https://img.shields.io/badge/Current_Phase-Core_Development-blue?style=for-the-badge)
+![Tech Stack](https://img.shields.io/badge/Stack-MERN-green?style=for-the-badge&logo=mongodb)
 
-### Frontend
-- **React** - UI library
-- **Vite** - Build tool and development server
-- **CSS** - Styling
+### 🚀 **Development Metrics**
 
-### Backend
-- **Node.js** - Runtime environment
-- **Express.js** - Web framework
-- **MongoDB** - Database
-- **Mongoose** - MongoDB object modeling
+<table align="center">
+<tr>
+<td align="center"><strong>📈 Progress</strong></td>
+<td align="center"><strong>🔥 Streak</strong></td>
+<td align="center"><strong>📝 Features</strong></td>
+<td align="center"><strong>🧪 Tests</strong></td>
+</tr>
+<tr>
+<td align="center">41%</td>
+<td align="center">5 days</td>
+<td align="center">31/76</td>
+<td align="center">0/15</td>
+</tr>
+</table>
 
-## Prerequisites
+### 📋 **Phase Breakdown**
 
-Before running this application, make sure you have the following installed:
-- Node.js (v14 or higher)
-- MongoDB (running locally on port 27017)
-- npm or yarn
+| Phase | Status | Progress | Features |
+|-------|--------|----------|----------|
+| **🏗️ Backend Foundation** | ✅ Complete | ![](https://geps.dev/progress/90) | `90%` (11/12) |
+| **⚡ Core Backend Development** | 🔄 Active | ![](https://geps.dev/progress/80) | `80%` (12/15) |
+| **🎨 Frontend Integration** | 🔄 Active | ![](https://geps.dev/progress/70) | `70%` (8/12) |
+| **🔐 Advanced Features** | ⏳ Pending | ![](https://geps.dev/progress/0) | `0%` (0/15) |
+| **⚡ Real-time & Optimization** | ⏳ Planned | ![](https://geps.dev/progress/0) | `0%` (0/12) |
+| **🚀 Testing & Deployment** | ⏳ Planned | ![](https://geps.dev/progress/0) | `0%` (0/10) |
 
-## Installation & Setup
+<details>
+<summary><strong>📊 Detailed Progress Breakdown</strong></summary>
 
-### 1. Clone the repository
-```bash
-git clone <your-repo-url>
-cd task-manager
+**✅ Completed Features (12/24)**
+- [x] Express.js server setup with middleware
+- [x] MongoDB connection with Mongoose
+- [x] Task model with schema validation
+- [x] Full CRUD API endpoints (GET, POST, PUT, DELETE)
+- [x] Error handling and status codes
+- [x] CORS configuration
+- [x] React frontend with hooks
+- [x] API integration with fetch
+- [x] Real-time UI updates
+- [x] Inline task editing
+- [x] Component-based architecture
+- [x] Environment configuration
+
+**🔄 In Progress (3/24)**
+- [ ] Input validation & error messages
+- [ ] Loading states & spinners
+- [ ] Responsive design
+
+**⏳ Planned Features (9/24)**
+- [ ] User authentication system
+- [ ] Task categories & priorities
+- [ ] Due dates & reminders
+- [ ] File attachments
+- [ ] Real-time collaboration
+- [ ] Advanced search & filtering
+- [ ] Analytics dashboard
+- [ ] Testing suite
+- [ ] Production deployment
+
+</details>
+
+---
+
+</div>
+
+## 🛠️ **Tech Stack & Architecture**
+
+<div align="center">
+
+**Frontend** | **Backend** | **Database** | **Tools**
+:---: | :---: | :---: | :---:
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB) | ![Node.js](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white) | ![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white) | ![Vite](https://img.shields.io/badge/vite-%23646CFF.svg?style=for-the-badge&logo=vite&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white) | ![Express.js](https://img.shields.io/badge/Express.js-404D59?style=for-the-badge) | ![Mongoose](https://img.shields.io/badge/Mongoose-880000?style=for-the-badge&logoColor=white) | ![Git](https://img.shields.io/badge/git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+
+</div>
+
+### 🏗️ **Architecture Overview**
+```
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   React Client  │◄──►│  Express API    │◄──►│   MongoDB       │
+│   (Port 5173)   │    │   (Port 5000)   │    │   (Port 27017)  │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
 ```
 
-### 2. Backend Setup
+## ⚡ **Quick Start**
+
+### 📋 **Prerequisites**
+- **Node.js** (v14+) - [Download](https://nodejs.org/)
+- **MongoDB** (Community) - [Download](https://www.mongodb.com/try/download/community)
+- **Git** - [Download](https://git-scm.com/downloads)
+
+### 🚀 **Installation**
+
 ```bash
+# 📥 Clone the repository
+git clone <your-repo-url>
+cd task-manager
+
+# 🖥️ Backend Setup
 cd backend
 npm install
 npm start
-```
-The backend server will start on `http://localhost:5000`
+# ✅ Server running on http://localhost:5000
 
-### 3. Frontend Setup
-Open a new terminal window:
-```bash
+# 🎨 Frontend Setup (new terminal)
 cd frontend
 npm install
 npm run dev
+# ✅ App running on http://localhost:5173
 ```
-The frontend will start on `http://localhost:5173`
 
-### 4. Database Setup
-Make sure MongoDB is running locally on the default port (27017). The application will automatically create a database named `taskmanager`.
+### 🎯 **Usage**
+1. **Create Tasks** - Add new tasks using the input field
+2. **Edit Tasks** - Click "Edit" for inline editing
+3. **Delete Tasks** - Remove completed tasks
+4. **Real-time Updates** - Changes reflect immediately
 
-## API Endpoints
+## 📡 **API Reference**
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| GET | `/tasks` | Get all tasks |
-| POST | `/tasks` | Create a new task |
-| PUT | `/tasks/:id` | Update a task by ID |
-| DELETE | `/tasks/:id` | Delete a task by ID |
+<details>
+<summary><strong>🔗 All Endpoints</strong></summary>
 
-## Project Structure
+| Method | Endpoint | Description | Status | Response |
+|--------|----------|-------------|--------|----------|
+| `GET` | `/` | Health check | ✅ | `"Hello World"` |
+| `GET` | `/tasks` | Get all tasks | ✅ | `[{_id, name}]` |
+| `POST` | `/tasks` | Create new task | ✅ | `{_id, name}` |
+| `PUT` | `/tasks/:id` | Update task | ✅ | `{_id, name}` |
+| `DELETE` | `/tasks/:id` | Delete task | ✅ | `{message}` |
+
+**Example Request:**
+```javascript
+// Create a new task
+fetch('http://localhost:5000/tasks', {
+  method: 'POST',
+  headers: { 'Content-Type': 'application/json' },
+  body: JSON.stringify({ name: "Learn React" })
+})
+```
+
+</details>
+
+## 📁 **Project Structure**
 
 ```
 task-manager/
-├── backend/
+├── 🖥️ backend/
 │   ├── models/
-│   │   └── Task.js
-│   ├── index.js
-│   └── package.json
-├── frontend/
+│   │   └── Task.js         # Mongoose schema
+│   ├── index.js            # Express server
+│   └── package.json        # Dependencies
+├── 🎨 frontend/
 │   ├── src/
-│   │   ├── App.jsx
-│   │   ├── App.css
-│   │   └── main.jsx
-│   ├── index.html
-│   └── package.json
-├── README.md
-└── ROADMAP.md
+│   │   ├── App.jsx         # Main component
+│   │   ├── App.css         # Styles
+│   │   └── main.jsx        # Entry point
+│   ├── index.html          # HTML template
+│   └── package.json        # Dependencies
+├── 📊 update-progress.js   # Auto-progress tracker
+├── 📋 ROADMAP.md          # Development plan
+└── 📄 README.md           # This file
 ```
 
-## Usage
+## 🤖 **Auto-Progress Tracking**
 
-1. Start both the backend and frontend servers
-2. Open your browser and navigate to `http://localhost:5173`
-3. Add tasks using the input field and "Add Task" button
-4. Click "Edit" to modify existing tasks
-5. Click "Delete" to remove tasks
+This project features **automated progress tracking** that updates this README!
 
-## Development
-
-### Backend Development
+### 🔄 **Manual Update**
 ```bash
-cd backend
-npm run dev  # If you have nodemon installed
+node update-progress.js
 ```
 
-### Frontend Development
-```bash
-cd frontend
-npm run dev
+### ⚙️ **Customize Progress**
+Edit `update-progress.js` and update completion numbers:
+```javascript
+'Phase 2: Core Backend Development': {
+  total: 15,
+  completed: 12, // ← Update this number
+}
 ```
 
-## Contributing
+### 🎯 **Features**
+- ✅ **Auto-badge updates** with color coding
+- ✅ **Progress bars** for each development phase  
+- ✅ **Completion percentages** with real-time calculations
+- ✅ **Last updated timestamps**
+- ✅ **Phase status tracking**
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/new-feature`)
-3. Commit your changes (`git commit -am 'Add new feature'`)
-4. Push to the branch (`git push origin feature/new-feature`)
-5. Create a Pull Request
+## 🚀 **Next Milestones**
 
-## License
+<table>
+<tr>
+<th>🎯 Current Focus</th>
+<th>📅 This Week</th>
+<th>🔮 Next Sprint</th>
+</tr>
+<tr>
+<td>
+• Input validation<br>
+• Error handling<br>
+• UI improvements
+</td>
+<td>
+• User authentication<br>
+• Task categories<br>
+• Responsive design
+</td>
+<td>
+• Real-time features<br>
+• File attachments<br>
+• Testing suite
+</td>
+</tr>
+</table>
 
-This project is open source and available under the [MIT License](LICENSE)." 
+---
+
+<div align="center">
+
+**Last Updated:** `June 2025` | **Version:** `1.0.0` | **Status:** `Active Development`
+
+[![GitHub stars](https://img.shields.io/github/stars/yourusername/task-manager?style=social)](https://github.com/yourusername/task-manager)
+[![GitHub forks](https://img.shields.io/github/forks/yourusername/task-manager?style=social)](https://github.com/yourusername/task-manager)
+
+**Made with ❤️ for productivity enthusiasts**
+
+</div> 

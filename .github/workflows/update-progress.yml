@@ -1,0 +1,40 @@
+name: 🚀 Auto-Update Progress Tracker
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  update-progress:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: 🔧 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+
+    - name: 📊 Update Progress
+      run: |
+        node update-progress.js
+        
+    - name: 🔄 Commit updated README
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "Progress Bot"
+        git add README.md
+        
+        if git diff --staged --quiet; then
+          echo "No changes to commit"
+        else
+          git commit -m "🤖 Auto-update progress tracker [skip ci]"
+          git push
+        fi 
